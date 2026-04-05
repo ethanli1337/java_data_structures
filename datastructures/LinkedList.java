@@ -22,6 +22,12 @@ public class LinkedList {
         this.length = 1;
     }   
 
+    public LinkedList() {
+        this.head = null;
+        this.tail = null;
+        this.length = 0;
+    }   
+
     public void printList() {
         Node temp = head;
         while (temp != null) {
