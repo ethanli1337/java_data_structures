@@ -31,7 +31,15 @@ public class LinkedList {
     }
 
     public void append(int value) {
-
+        Node newNode = new Node(value);
+        if (length == 0) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail.next = newNode;
+            tail = newNode;
+        }
+        length++;
     }
 
     public void prepend(int value) {
@@ -41,6 +49,24 @@ public class LinkedList {
     public boolean insert(int index, int value) {
 
         return true;
+    }
+
+    public Node removeLast() {
+        if (length == 0) return null;
+        Node temp = head;
+        Node pre = head;
+        while (temp.next != null) {
+            pre=temp;
+            temp=temp.next;
+        }
+        tail = pre;
+        tail.next = null;
+        length--;
+        if (length == 0) {
+            head = null;
+            tail = null;
+        }
+        return temp;
     }
 
     public void getLength() {
