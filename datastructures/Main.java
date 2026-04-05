@@ -11,7 +11,11 @@ public class Main {
         // linked.append(2);
         // linked.append(3);
         // linked.printList();
-        System.out.println(linked.removeLast().value);
+        // System.out.println(linked.removeLast().value);
+        linked.prepend(2);
+        linked.removeLast();
+        linked.removeLast();
+        linked.prepend(2);
         linked.printList();
     }
 }
