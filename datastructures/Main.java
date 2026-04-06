@@ -3,11 +3,14 @@ package datastructures;
 public class Main {
     
     public static void main(String[] args) {
-        LinkedList linked = new LinkedList(1);
+        LinkedList linked = new LinkedList(0);
+        linked.append(1);
         linked.append(2);
-        System.out.println(linked.removeFirst().value);
-        System.out.println(linked.removeFirst().value);
-        System.out.println(linked.removeFirst());
+        linked.append(3);
+
+        System.out.println(linked.get(2).value + "\n");
+
+        linked.printList();
 
 
         // linked.getHead();
