@@ -3,14 +3,16 @@ package datastructures;
 public class Main {
     
     public static void main(String[] args) {
-        LinkedList linked = new LinkedList(0);
-        linked.append(1);
-        linked.append(2);
-        linked.append(3);
+        // LinkedList linked = new LinkedList(0);
+        // linked.append(1);
+        // linked.append(2);
+        // linked.append(3);
 
-        System.out.println(linked.get(2).value + "\n");
+        // System.out.println(linked.get(2).value + "\n");
 
-        linked.printList();
+        // linked.printList();
+
+
 
 
         // linked.getHead();
@@ -26,5 +28,13 @@ public class Main {
         // linked.removeLast();
         // linked.prepend(2);
         // linked.printList();
+
+        
+        System.out.println(bottom_up.fib(7));
+        System.out.println(bottom_up.counter);
+
+        System.out.println(recursiveFib.fib(7));
+        System.out.println(recursiveFib.counter);
+
     }
 }
