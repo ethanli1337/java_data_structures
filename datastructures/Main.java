@@ -30,14 +30,14 @@ public class Main {
         // linked.printList();
 
         
-        System.out.println(bottom_up.fib(7));
-        System.out.println(bottom_up.counter);
+        // System.out.println(bottom_up.fib(7));
+        // System.out.println(bottom_up.counter);
 
-        System.out.println(recursiveFib.fib(7));
-        System.out.println(recursiveFib.counter);
+        // System.out.println(recursiveFib.fib(7));
+        // System.out.println(recursiveFib.counter);
 
-        System.out.println(memoization.fib(3));
-        System.out.println(memoization.dynamicFib(2));
+        // System.out.println(memoization.fib(3));
+        System.out.println(memoization.dynamicFib(10));
 
     }
 }
