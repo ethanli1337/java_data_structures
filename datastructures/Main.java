@@ -36,5 +36,8 @@ public class Main {
         System.out.println(recursiveFib.fib(7));
         System.out.println(recursiveFib.counter);
 
+        System.out.println(memoization.fib(3));
+        System.out.println(memoization.dynamicFib(2));
+
     }
 }
